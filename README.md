@@ -1,3 +1,5 @@
+<img src="frechet.jpg" width=60% height=60% />
+
 # frechet
 frechet implements [Frechet Distance](https://en.wikipedia.org/wiki/Fr%C3%A9chet_distance) algorithm using golang.
 
