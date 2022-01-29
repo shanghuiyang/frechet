@@ -1,6 +1,9 @@
 <img src="frechet.jpg" width=60% height=60% />
 
 # frechet
+[![CI](https://github.com/shanghuiyang/frechet/actions/workflows/CI.yml/badge.svg)](https://github.com/shanghuiyang/frechet/actions/workflows/CI.yml)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/shanghuiyang/frechet/blob/main/LICENSE)
+
 frechet implements [Frechet Distance](https://en.wikipedia.org/wiki/Fr%C3%A9chet_distance) algorithm using golang.
 
 ## Usage
