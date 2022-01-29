@@ -46,25 +46,25 @@ func TestFrechet(t *testing.T) {
 			noError: true,
 		},
 		{
+			desc: "2D series",
 			//  y
 			//  ^
-			//  |         t
-			//  |         /
-			//  |      /     s
-			//  |   /      /
-			//  |/      /
-			//  |    /
-			//  | /
-			//  +---------------------> x
-			desc: "2D series",
-			s:    []point{{0, 0}, {1, 1}, {2, 2}},
-			t:    []point{{0, 1}, {1, 2}, {2, 3}},
+			//  |
+			//  |              *
+			//  |           /     \
+			//  |    *----*         *----*  t
+			//  |
+			//  |    *----*----*----*----*  s
+			//  |
+			//  +---------------------------------> x
+			s: []point{{1, 1}, {2, 1}, {3, 1}, {4, 1}, {5, 1}},
+			t: []point{{1, 2}, {2, 2}, {3, 3}, {4, 2}, {5, 2}},
 			df: func(x, y interface{}) float64 {
 				p1 := x.(point)
 				p2 := y.(point)
 				return math.Sqrt((p1.x-p2.x)*(p1.x-p2.x) + (p1.y-p2.y)*(p1.y-p2.y))
 			},
-			dist:    1,
+			dist:    2,
 			noError: true,
 		},
 		{
